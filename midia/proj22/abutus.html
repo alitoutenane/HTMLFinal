@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Uni Mind</title>
+  <link rel="stylesheet" href="proj.css" />
+  <style>
+    body {
+      padding-top: 10vh;
+    }
+
+    .section {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: #293140; /* changed to match header */
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      color: #C3CBD9; /* light text for contrast */
+    }
+
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .section h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .page-title {
+      text-align: center;
+      font-size: 3rem;
+      color: #293140;
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+      transition: transform 0.4s ease;
+    }
+
+    .page-title:hover {
+      transform: scale(1.05);
+      color: #00BFFF;
+    }
+
+    .contact-box {
+      text-align: center;
+      padding: 2rem;
+      background: #293140;
+      color: #C3CBD9;
+      border-radius: 12px;
+      margin: 4rem auto;
+      width: 90%;
+      max-width: 700px;
+    }
+
+    .contact-box a {
+      color: #C3CBD9;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+
+    @media (max-width: 600px) {
+      .section {
+        margin: 2rem 1rem;
+        padding: 1rem;
+      }
+
+      .page-title {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="left-section">
+      <img src="output-onlinepngtools (4).png" alt="Uni Mind Logo" />
+      <a href="homepage.html">Home</a>
+    </div>
+    <div class="right-section">
+      <a href="log-in.html">Login</a>
+    </div>
+  </header>
+
+  <h1 class="page-title">About Uni Mind</h1>
+
+  <div class="section fade-in">
+    <h2>Who We Are</h2>
+    <p>Uni Mind is a digital platform designed to support the mental health and academic journey of university students. We're here to help you stay balanced, focused, and connected.</p>
+  </div>
+
+  <div class="section fade-in">
+    <h2>Our Mission</h2>
+    <p>To empower students by providing helpful tools, wellness resources, and a strong community that understands the pressures of university life.</p>
+  </div>
+
+  <div class="section fade-in">
+    <h2>Meet the Team</h2>
+    <p>We're university students just like you — passionate about mental health, driven by empathy, and committed to creating change in how we navigate academic life together.</p>
+  </div>
+
+  <div class="contact-box">
+    <h3>Contact Support</h3>
+    <p>Phone: 0798491132</p>
+    <a href="mailto:html_team1@gmail.com">html_team1@gmail.com</a>
+  </div>
+
+  <script>
+    // Fade-in animation on scroll
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    fadeElements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

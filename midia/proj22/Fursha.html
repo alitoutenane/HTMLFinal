@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fursha</title>
+    <link rel="stylesheet" href="proj.css">
+    <style>
+                   /* the first styles css */
+        .main-header {height: 7% ;padding: 1rem 1rem ;}
+        
+        .left-section,.right-section {gap: 1.5rem ;}
+        
+        .container {display: block ;margin: 25px 250px ;padding: 2rem ;margin-top: 0 !important;align-items: normal ;}
+        
+        .content-box {margin-bottom: 25px;}
+        
+        .logo {font-size: 1.5rem !important;font-weight: bold ;background-image: none ;}
+        
+        input { margin-right: 8px ;vertical-align: middle;  padding: 0.8rem;background: #C3CBD9 ;border: 1px solid #444 ;color :white; border-radius: 6px; width: 100%}
+        
+        .h2-fout{color: #ffffff; margin-bottom: 2rem;}
+
+        .h3-fout{color: #C3CBD9;margin-bottom: 1rem;}
+
+        p{color: #ccc;margin-bottom: 0rem;}
+
+        label{background: #C3CBD9; padding: 1rem; border-radius: 6px; text-align: center;}       
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="left-section">
+            <img src="output-onlinepngtools (4).png" width="100px" height="75px" style= "transform : scale(1.2); " >
+            <a href="homepage.html">Home</a> <a href="abutus.html">About Us</a>
+            <a href="#how-it-works">How It Works</a>
+           
+        </div>
+        <div class="right-section">
+            <a href="#login">Login</a>
+           
+        </div>
+    </header>
+
+    <div class="container" style="margin: auto auto; width: 800px;">
+        
+
+        <!-- Job Finder Section -->
+        <div class="content-box" style="text-align: left;">
+            <h1 style="color: #dacebe; margin: 0% 0%;font-size: 2.5rem;">Fursha</h1>
+            <h1  >Student Work Finder</h1>
+            <h2 style="color: #ffffff; margin-bottom: 2rem;">WORK THAT FITS YOUR SCHEDULE</h2>
+            <h3 style="color: #ffffff; margin-bottom: 1rem;">Ceate Your Profile</h3>
+            
+            <form class="job-search-form" id="mainForm">
+                <!-- Phone Input -->
+                <div style="margin-bottom: 1rem;">
+                    <h3 class="h3-fout">Personal Information</h3>
+                    <input class="input" type="number" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <!-- Personal Information -->
+                <div style="margin-bottom: 2rem;">
+                    
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+                        <label>
+                            <input type="text" name="name" placeholder="Enter your Name" required >
+                        </label>
+
+                        <label>
+                            <input type="text" name="university" placeholder="Your University" required?>
+                        </label>
+
+                        <label>
+                            <input type="number" name="ID" placeholder="Enter Student ID" required >
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Job Type time -->
+                <div style="margin-bottom: 3rem;">
+                    <h3 class="h3-fout">Job Type</h3>
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+                        <label>
+                            <input type="radio" name="job-type" value="part-time" required>
+                            <span style="color: #293140;">Part-Time</span>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="job-type" value="full-time">
+                            <span style="color: #293140;">Full-Time</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="job-type" value="flexible">
+                            <span style="color: #293140;">Flexible</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Shift Preference -->
+                <div style="margin-bottom: 2rem;">
+                    <h3 class="h3-fout">Shift Preference</h3>
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+                        <label style="background: #C3CBD9; padding: 1rem; border-radius: 6px; text-align: center;">
+                            <input type="radio" name="shift-time" value="morning" required>
+                            <span style="color: #293140;">Morning Shift</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="shift-time" value="evening">
+                            <span style="color: #293140;">Evening Shift</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="shift-time" value="night">
+                            <span style="color: #293140;">Night Shift</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="extra-buttons">
+                    <button type="submit" style="background-color: #C3CBD9; color: #1e1e1e;padding: 1rem 2rem;border: none;border-radius: 6px;cursor: pointer;font-weight: bold;">
+                     Find Jobs
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- How It Works Section -->
+        <div class="content-box" id="how-it-works" style="text-align: left;">
+            <h2 style="color: #C3CBD9; margin-bottom: 2rem;">How It Works</h2>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                <div style="background: #C3CBD9; padding: 1.5rem; border-radius: 8px;">
+                    <h3 class="h3-fout" style="color: #293140;">1. Idea Of The Page </h3>
+                    <p style="color: #293140">This page helps students find work according to their schedule so that it does not hinder their studies.</p>
+                </div>
+                <div style="background: #C3CBD9; padding: 1.5rem; border-radius: 8px;">
+                    <h3 class="h3-fout" style="color: #293140">2. Mutual Benefits</h3>
+                    <p style="color: #293140 ; margin-bottom: 0px;"> <h5 style="color: #293140">For Teenagers: </h5></p>
+                    <p style=" color: #293140; margin-bottom: 0px;">Opportunities to earn money, gain experience, and build a strong resume.</p>
+                    <p style="color: #293140 ; margin-bottom: 0px;"> <h5 style="color: #293140">For Companies: </h5></p>
+                    <p style=" color: #293140; margin-bottom: 0px;"> Access to young, flexible talent and future-proof careers.</p>
+                </div>
+                <div style="background: #C3CBD9; padding: 1.5rem; border-radius: 8px;">
+                    <h3 class="h3-fout" style="color: #293140">3. After Createing Profile</h3>
+                    <p style="color: #293140">Companies face a difficult hiring process, with only 25% of every 100 candidates accepting an offer, wasting time communicating with those who aren't interested. By creating a comprehensive profile, you can identify and focus on those who are interested in advance, ensuring quick and effective hiring.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="content-box" style="background: #293140; text-align: left;">
+            <h3 class="h3-fout " >Contact Support</h3>
+            <p>Phone: 0798491132</p>
+            <a href="mailto:html_team1@gmail.com" style="color: #C3CBD9; text-decoration: none; display: inline-block;">html_team1@gmail.com</a>
+        </div>
+    </div>
+
+</body>
+</html>
